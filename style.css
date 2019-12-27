@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: #333;
+}
+
+#cards {
+  background: #fff;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.card {
+  width: 22%;
+  padding: 1%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 1%;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.details-container {
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.profile-image {
+  width: 20%;
+  padding-bottom: 20%;
+  background: url('https://images.pexels.com/photos/716658/pexels-photo-716658.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  float: left;
+}
+
+.user_date {
+  width: 65%;
+  float: left;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  transform: translate(0, -60%);
+  padding-left: 1%;
+}
+
+.user {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.source {
+  width: 12%;
+  padding-bottom: 12%;
+  background: url('instagram.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(0%, -70%)
+}
+
+.photo-container {
+  width: 100%;
+  padding-bottom: 100%;
+  background: url('https://images.pexels.com/photos/250177/pexels-photo-250177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.caption-container {
+  text-align: left;
+  padding-top: 3%;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.likes-container {
+  text-align: left;
+  margin-top: 3%;
+  padding-top: 3%;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 968px) {
+  .card {
+    width: 47%;
+    padding: 2%;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .card {
+    width: 98%;
+    padding: 4%;
+  }
+}
