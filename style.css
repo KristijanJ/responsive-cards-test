@@ -51,7 +51,7 @@
   float: left;
   text-align: left;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 22%;
   transform: translate(0, -60%);
   padding-left: 1%;
@@ -60,6 +60,9 @@
 .user {
   font-weight: bold;
   padding-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .source {
@@ -86,19 +89,24 @@
 }
 
 .caption-container {
+  padding-top: 6px;
   text-align: left;
-  padding-top: 3%;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  height: 66px;
+}
+
+.caption {
+  line-height: 20px;
 }
 
 .likes-container {
   text-align: left;
-  margin-top: 3%;
-  padding-top: 3%;
+  margin-top: 6px;
+  padding-top: 6px;
   border-top: 1px solid #ccc;
 }
 
