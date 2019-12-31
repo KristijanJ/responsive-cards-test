@@ -19,11 +19,11 @@
 }
 
 .card {
-  width: 22%;
-  padding: 1%;
+  width: calc(25% - 43px);
+  padding: 16px;
   background: #fff;
   border: 1px solid #ccc;
-  margin: 1%;
+  margin: 20px;
   display: inline-block;
   font-size: 16px;
 }
@@ -101,6 +101,7 @@
 
 .caption {
   line-height: 20px;
+  color: #444;
 }
 
 .likes-container {
@@ -112,15 +113,26 @@
 
 @media (max-width: 968px) {
   .card {
-    width: 47%;
-    padding: 2%;
+    width: calc(50% - 42px);
   }
 }
 
 
 @media (max-width: 720px) {
   .card {
-    width: 98%;
-    padding: 4%;
+    width: calc(100% - 42px);
+  }
+
+  .caption {
+    line-height: 0px;
+    font-size: 12px;
+  }
+
+  .user_date {
+    font-size: 12px;
+  }
+
+  .likes-container {
+    font-size: 12px;
   }
 }
